@@ -1,0 +1,10 @@
+.venv/
+.env
+__pycache__/
+.pytest_cache/
+data/
+!data/.gitkeep
+work/ui-tests/node_modules/
+.DS_Store
+outputs/
+work/

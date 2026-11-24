@@ -1,0 +1,76 @@
+{
+  "name": "earnings-release-development-v1",
+  "scope": "Manually checked development examples for lexical evidence retrieval. Not held-out answer accuracy or LlamaParse quality. Negative cases mean no matching evidence in these snapshots, not absence from company disclosures.",
+  "sources": [
+    {
+      "company": "Snowflake",
+      "snapshot": "data/evaluation/Snowflake.json",
+      "sha256": "f2164a664b532bf9415d471ab18fb82a84df87676a9466c90d567b925b8f3f0a",
+      "url": "https://www.snowflake.com/en/news/press-releases/snowflake-reports-financial-results-for-the-fourth-quarter-and-full-year-of-fiscal-2026/",
+      "status": "ready"
+    },
+    {
+      "company": "ServiceNow",
+      "snapshot": "data/evaluation/ServiceNow.json",
+      "sha256": "5689288b2f5a631501a2120a20109c835e36ec5fc4aabd26b6cee6b9a258c3fd",
+      "url": "https://investor.servicenow.com/news/news-details/2026/ServiceNow-Reports-Fourth-Quarter-and-Full-Year-2025-Financial-Results-Board-of-Directors-Authorizes-Additional-5B-for-Share-Repurchase-Program/default.aspx",
+      "status": "ready"
+    },
+    {
+      "company": "Datadog",
+      "url": "https://investors.datadoghq.com/news-releases/news-release-details/datadog-announces-fourth-quarter-and-fiscal-year-2025-financial",
+      "status": "blocked",
+      "reason": "Official release and filing mirror rejected direct download; not scored."
+    }
+  ],
+  "cases": [
+    {
+      "company": "Snowflake",
+      "question": "What was fourth quarter product revenue?",
+      "expected_quote_contains": "Product revenue of $1.23 billion in the fourth quarter",
+      "expect_no_evidence": false
+    },
+    {
+      "company": "Snowflake",
+      "question": "What were remaining performance obligations?",
+      "expected_quote_contains": "Remaining performance obligations of $9.77 billion",
+      "expect_no_evidence": false
+    },
+    {
+      "company": "Snowflake",
+      "question": "What was subscription revenue?",
+      "expected_quote_contains": null,
+      "expect_no_evidence": true
+    },
+    {
+      "company": "Snowflake",
+      "question": "What was supply chain finance?",
+      "expected_quote_contains": null,
+      "expect_no_evidence": true
+    },
+    {
+      "company": "ServiceNow",
+      "question": "What were Q4 subscription revenues?",
+      "expected_quote_contains": "Subscription revenues of $3,466 million in Q4 2025",
+      "expect_no_evidence": false
+    },
+    {
+      "company": "ServiceNow",
+      "question": "What were remaining performance obligations?",
+      "expected_quote_contains": "Remaining performance obligations of $28.2 billion",
+      "expect_no_evidence": false
+    },
+    {
+      "company": "ServiceNow",
+      "question": "What was product revenue?",
+      "expected_quote_contains": null,
+      "expect_no_evidence": true
+    },
+    {
+      "company": "ServiceNow",
+      "question": "What was supply chain finance?",
+      "expected_quote_contains": null,
+      "expect_no_evidence": true
+    }
+  ]
+}

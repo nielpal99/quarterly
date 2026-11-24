@@ -1,0 +1,7 @@
+{
+  "company": "Example Software (fictional)",
+  "ticker": "DEMO",
+  "title": "Fictional earnings release · FY2025 Q4",
+  "notice": "Synthetic teaching data, not a real company or investment research. No LlamaParse result is implied. This example demonstrates source selection, evidence search and saved excerpt briefs without keys or API calls.",
+  "html": "<h1>Example Software — fictional FY2025 Q4 results</h1><h2>Revenue</h2><p>FY2025 Q4 product revenue was $150 million, representing 20% year-over-year growth.</p><h2>Margins</h2><p>FY2025 Q4 non-GAAP operating margin was 25%. FY2025 Q4 GAAP operating margin was 10%. These are distinct accounting measures.</p><h2>Cash flow</h2><p>FY2025 Q4 free cash flow was $40 million.</p><h2>Outlook</h2><p>FY2026 full-year product revenue guidance is $650 million. Guidance is forward-looking and is not a reported actual.</p>"
+}
